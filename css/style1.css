@@ -1,0 +1,213 @@
+*{
+  margin: 0; padding: 0;box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+  width: 100%; height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.15)), url('../images/taj.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.main_div {
+
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+  
+.box {
+  width: 500px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.box h4 {
+  margin-bottom: 25px;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.box .input-box {
+  position: relative;
+}
+
+.box .input-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+}
+
+.box .input-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.box input[type="submit"] ,.back{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #03a9f4;
+  padding: 9px 18px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+  
+.box .input-box input:focus~label, .box .input-box input:valid~label {
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+  color: #03a9f4;
+}
+  .drop 
+{
+ border-radius: 5px;
+ background-color: cyan;
+ padding:20px;
+ margin-bottom: 20px;
+ width: 100%;
+}
+.drop option{
+  font-size: 20px;
+
+}
+/*  login validation div css start*/
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+position: relative;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 2px 5px;
+  font-size: 15px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+   content: '\2714 \fe0e';
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+ content: '\2716 \fe0e';
+
+}
+/* login validation div css end*/
+main{
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; color: white;
+}
+
+section{
+
+}
+
+section h3{
+  font-size: 35px; font-weight: 200; letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+  margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+  font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section button{
+  padding: 20px 40px;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+section .btnone{
+  /*background: #00b894;*/
+  background: #fff;
+  color: #000;
+}
+
+.btnone:hover{
+  background: #00b894;
+  color: white;
+}
+
+section .btntwo{
+  background: #00b894;
+  color: white;
+}
+
+ .btntwo:hover{
+  background: #fff;
+  color: #000;
+ }
+
+.change_content:after{
+  content: '';
+  animation: changetext 10s infinite linear;
+  color: #00b894;
+}
+
+@keyframes changetext{
+  0%{content:"All Subjects";}
+  20% { content:"Coding"; }
+    35% { content:"Drawing"; }
+    60% { content: "Dancing"; }
+    80% { content: "Communication Skill"; }
+    100% { content: "Excercise"; }
+}
